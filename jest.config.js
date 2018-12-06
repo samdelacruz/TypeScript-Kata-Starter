@@ -68,6 +68,7 @@ module.exports = {
 
   // An array of file extensions your modules use
   moduleFileExtensions: [
+    "js",
     "ts",
     "tsx"
   ],
@@ -140,9 +141,10 @@ module.exports = {
   ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  // testPathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "(.+).js"
+  ],
 
   // The regexp pattern Jest uses to detect test files
   // testRegex: "",
